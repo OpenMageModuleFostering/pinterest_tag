@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package>
+    <name>Pinterest_Tag</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/osl-3.0.php">Open Software License (OSL)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>The Pinterest Tag for All &#x201C;Page Visits&#x201D; is for advertisers that want to track conversions from their Pinterest Promoted Pins.</summary>
+    <description>The Pinterest Tag for All &#x201C;Page Visits&#x201D; is a javascript analytics tag that captures when a user visits a page. For more details, visit http://engagecommerce.io/downloads/pinterest-tag-all-page-visits-magento/</description>
+    <notes>  - enable / disable support&#xD;
+  - tag placement support for before head end, after body start, before body end&#xD;
+  - 1 or multiple ids</notes>
+    <authors><author><name>Matthew Parke</name><user>MAG003281797</user><email>magento@engagecommerce.io</email></author></authors>
+    <date>2016-01-19</date>
+    <time>03:48:40</time>
+    <contents><target name="magecommunity"><dir name="EngageCommerce"><dir name="Pinterest"><dir name="Helper"><file name="Data.php" hash="0e82db74df7692897b336507438f06cd"/></dir><dir name="Model"><file name="LoadOrder.php" hash="7c90095a760e2e6da43d58ce5d083b6a"/></dir><dir name="etc"><file name="adminhtml.xml" hash="781ecd90132ee54d4e746cf06f8f2202"/><file name="config.xml" hash="9cfc44d52a240f02412d8b644e11410e"/><file name="system.xml" hash="ad51a26cd083c6e3adc3cc928e32da50"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="engagecommerce_pinterest.xml" hash="4092fe01599b628b66f269baa626bf48"/></dir><dir name="template"><dir name="EngageCommerce"><dir name="Pinterest"><file name="pinterest_pixel.phtml" hash="98e2668dda70e4f84c16484f0e47da8a"/><file name="pixel_after_body_start.phtml" hash="b1e93bfd5a63fb33a71356512e4ae835"/><file name="pixel_before_body_end.phtml" hash="f29e0b776119bbc8261ae3bb70d5e0d6"/><file name="pixel_before_head_end.phtml" hash="4080ff5e15d0788f7f4e493f04895036"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="EngageCommerce_Pinterest.xml" hash="a269af6563f9d5e088e0a013c62e624c"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

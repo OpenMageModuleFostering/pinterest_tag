@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Engage Commerce
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magentocommerce.com so we can send you a copy immediately.
+ *
+ * @category    EngageCommerce
+ * @package     EngageCommerce_Pinterest
+ * @copyright   Copyright (c) 2016 Engage Commerce (http://engagecommerce.io)
+ * @license     http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
+ */
+-->
+<config>
+    <tabs>
+        <engagecommerce>
+            <label>Engage Commerce</label>
+            <sort_order>100</sort_order>
+        </engagecommerce>
+    </tabs>
+    <sections>
+        <engagecommerce_pinterest translate="label">
+            <label>Pinterest Tag</label>
+            <tab>engagecommerce</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>2</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <pinterest_pixel translate="label">
+                    <label>Setup All "Page Visits" Tag</label>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <sort_order>1</sort_order>
+                    <expanded>1</expanded>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Enabled</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Enabling the Pinterest tag for "Page Visits" will allow the tag to load on every page, sending your visitor traffic to Pinterest so that you can utilize <a href="https://help.pinterest.com/en/articles/website-conversion-tracking" target="_blank">conversion tracking</a>.]]></comment>
+                        </enabled>
+                        <pixel_id translate="label">
+                            <label>Pinterest Tag ID(s)</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Your Pinterest tag ID(s) can be found when you edit tags from the <a href="https://ads.pinterest.com/conversion_tags/" target="_blank">conversion tracking</a> page. See this <a href="https://help.pinterest.com/sites/help/files/conversion-tracking.pdf" target="_blank">help pdf</a> for more info. If entering multiple IDs, please separate them with a comma.]]></comment>
+                        </pixel_id>
+                        <loadorder translate="label">
+                            <label>Pinterest Tag Load Order</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>EngageCommerce_Pinterest_Model_LoadOrder</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <comment><![CDATA[Change where in your page the Pinterest tag will load if needed, but <a href="https://help.pinterest.com/en/articles/website-conversion-tracking" target="_blank">Pinterest recommends</a> loading it at the end of the body section.]]></comment>
+                        </loadorder>
+                    </fields>
+                </pinterest_pixel>
+            </groups>
+        </engagecommerce_pinterest>
+    </sections>
+</config>
