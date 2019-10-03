@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Pinterest_Tag",
+    "name": "OpenMageModuleFostering\/Pinterest_Tag",
     "type": "magento-module",
     "license": "Open-Software-License-(OSL)",
     "homepage": "",
-    "description": "The Pinterest Tag for All “Page Visits” is for advertisers that want to track conversions from their Pinterest Promoted Pins.",
+    "description": "The Pinterest Tag for All \u201cPage Visits\u201d is for advertisers that want to track conversions from their Pinterest Promoted Pins.",
     "authors": [
-    {
-        "name": "Matthew Parke",
-        "email": "development@engagecommerce.io"
-    }
-],
+        {
+            "name": "Matthew Parke",
+            "email": "development@engagecommerce.io"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
